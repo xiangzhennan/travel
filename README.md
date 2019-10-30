@@ -1,4 +1,6 @@
-# travel
-ssm练习网站：采用流传较广的黑马旅游网
-
-主要工作：后端改用SSM框架实现，前端页面小改
+echo "# boot">> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ly1225xxl/boot.git
+git push -u origin master
