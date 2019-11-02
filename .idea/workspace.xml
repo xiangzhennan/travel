@@ -6,7 +6,46 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd00936c-13ea-4d47-a215-284ccf2c693a" name="Default Changelist" comment="" />
+    <list default="true" id="bd00936c-13ea-4d47-a215-284ccf2c693a" name="Default Changelist" comment="所有功能已经按SSM实现，总结项目后，需要重构部分重复代码">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/axis.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xzn/dao/FavoriteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xzn/dao/RouteImgDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xzn/dao/SellerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xzn/domain/Favorite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xzn/service/FavoriteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xzn/service/FavoriteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/favoriterank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/myfavorite.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/route_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xzn/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xzn/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xzn/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xzn/controller/RouteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xzn/controller/registController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xzn/controller/registController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xzn/dao/RouteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xzn/dao/RouteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xzn/domain/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xzn/domain/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xzn/service/RouteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xzn/service/RouteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xzn/service/RouteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xzn/service/RouteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xzn/controller/PageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xzn/dao/RouteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xzn/dao/RouteDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xzn/domain/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xzn/domain/Route.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xzn/service/RouteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xzn/service/RouteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xzn/service/RouteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xzn/service/RouteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/classes/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/travel/WEB-INF/classes/TestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/controller/PageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/dao/RouteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/dao/RouteDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/domain/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/domain/Route.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/service/RouteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/service/RouteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/service/RouteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/travel/WEB-INF/classes/xzn/service/RouteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/lib/jackson-annotations-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/lib/jackson-core-2.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/WEB-INF/lib/jackson-databind-2.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/travel/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/travel/header.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +61,10 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -43,29 +86,34 @@
     </option>
   </component>
   <component name="ProjectId" id="1SgwwtoDl4l3tXVnSVpwfVSYKQJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/xzn/domain" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java_work\travel\src\main\java\xzn\domain" />
+      <recent name="C:\java_work\travel\src\main\webapp" />
+      <recent name="C:\java_work\travel\src\main\webapp\WEB-INF" />
+      <recent name="C:\java_work\travel\target\travel" />
+      <recent name="C:\java_work\travel\src\main\java\xzn" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\java_work\travel\src\main\webapp" />
       <recent name="C:\java_work\travel\src\main\webapp\js" />
       <recent name="C:\java_work\travel\src\main\webapp\html" />
       <recent name="C:\java_work\travel\src\main\webapp\WEB-INF" />
       <recent name="C:\java_work\travel\src\main\webapp\WEB-INF\views" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\java_work\travel\src\main\webapp\WEB-INF" />
-      <recent name="C:\java_work\travel\src\main\java\xzn\domain" />
-      <recent name="C:\java_work\travel\src\main\webapp" />
-      <recent name="C:\java_work\travel\target\travel" />
-      <recent name="C:\java_work\travel\src\main\java\xzn" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -186,11 +234,31 @@
       <workItem from="1572246579179" duration="20763000" />
       <workItem from="1572340078037" duration="428000" />
       <workItem from="1572360552068" duration="11553000" />
+      <workItem from="1572420130672" duration="1037000" />
+      <workItem from="1572672156439" duration="19512000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="所有功能已经按SSM实现，总结项目后，需要重构部分重复代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="所有功能已经按SSM实现，总结项目后，需要重构部分重复代码" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/travel$Tomcat_8_5_45.ic" NAME="Tomcat 8.5.45 Coverage Results" MODIFIED="1572156037754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

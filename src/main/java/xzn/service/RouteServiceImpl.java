@@ -14,22 +14,27 @@ public class RouteServiceImpl implements RouteService{
     private RouteDao routeDao;
 
     @Override
-    public PageBean<Route> pageQuery(int cid, int currentPage, int pageSize) {
+    public PageBean<Route> pageQuery(int cid, int currentPage, int pageSize,String rname) {
         //封装pageBean
         PageBean<Route> pb = new PageBean<>();
         pb.setCurrentPage(currentPage);
         pb.setPageSize(pageSize);
-        int totalCount = routeDao.findRecordsNum(cid);
+        int totalCount = routeDao.findRecordsNum(cid,rname);
         System.out.println("总条数"+totalCount);
         pb.setTotalCount(totalCount);
         //封装数据集合
         int start = (currentPage-1)*pageSize;
-        List<Route> list = routeDao.findByPage(cid,start,pageSize);
+        List<Route> list = routeDao.findByPage(cid,start,pageSize,rname);
         pb.setList(list);
 
         int totalPage = (totalCount%pageSize==0?0:1)+totalCount/pageSize;
         pb.setTotalPage(totalPage);
 
         return pb;
+    }
+
+    @Override
+    public Route findOne(int rid) {
+        return routeDao.findOne(rid);
     }
 }

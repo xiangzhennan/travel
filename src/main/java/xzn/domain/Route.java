@@ -62,38 +62,6 @@ public class Route implements Serializable {
         this.sourceId = sourceId;
     }
 
-    public List<RouteImg> getRouteImgList() {
-        return routeImgList;
-    }
-
-    public void setRouteImgList(List<RouteImg> routeImgList) {
-        this.routeImgList = routeImgList;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
-    public Seller getSeller() {
-        return seller;
-    }
-
-    public void setSeller(Seller seller) {
-        this.seller = seller;
-    }
-
-    public String getSourceId() {
-        return sourceId;
-    }
-
-    public void setSourceId(String sourceId) {
-        this.sourceId = sourceId;
-    }
-
     public int getRid() {
         return rid;
     }
@@ -180,6 +148,38 @@ public class Route implements Serializable {
 
     public void setSid(int sid) {
         this.sid = sid;
+    }
+
+    public String getSourceId() {
+        return sourceId;
+    }
+
+    public void setSourceId(String sourceId) {
+        this.sourceId = sourceId;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public Seller getSeller() {
+        return seller;
+    }
+
+    public void setSeller(Seller seller) {
+        this.seller = seller;
+    }
+
+    public List<RouteImg> getRouteImgList() {
+        return routeImgList;
+    }
+
+    public void setRouteImgList(List<RouteImg> routeImgList) {
+        this.routeImgList = routeImgList;
     }
 
     @Override

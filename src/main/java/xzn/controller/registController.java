@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Date;
-
+//注册
 @Controller
 @RequestMapping("/user")
 public class registController {
