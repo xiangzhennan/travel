@@ -23,14 +23,14 @@ public interface RouteDao {
                 SELECT("count(*)");
                 FROM("tab_route");
                 if((int)params.get("arg0")!=0)WHERE("cid="+params.get("arg0"));
-                if(params.get("arg1")!=null&&params.get("arg1")!="")WHERE("rname like '"+params.get("arg1")+"'");
+                if(params.get("arg1")!=null&&!params.get("arg1").equals(""))WHERE("rname like '"+params.get("arg1")+"'");
             }}.toString();
         }
         //自定义方法组装sql
-        public String findByPageSql(int cid,int start,int pageSize,String rname){
+        public String findByPageSql(Map<String,Object> params){
             StringBuilder sql= new StringBuilder("select * from tab_route where 1=1 ");
-            if(cid!=0)sql.append("and cid = #{arg0} ");
-            if(rname!=null&&rname.equals(""))sql.append("and rname like #{arg3} ");
+            if((int)params.get("arg0")!=0)sql.append("and cid = #{arg0} ");
+            if(params.get("arg3")!=null&&!params.get("arg3").equals(""))sql.append("and rname like #{arg3} ");
             sql.append("limit #{arg1},#{arg2}");
             return sql.toString();
         }

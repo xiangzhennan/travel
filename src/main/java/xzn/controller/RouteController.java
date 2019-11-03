@@ -44,10 +44,10 @@ public class RouteController {
         if (pageSizeString!=null&&pageSizeString.length()>0){
             pageSize = Integer.parseInt(pageSizeString);
         }
-        if (rname!=null&&rname.equals(""))rname = "%"+rname+"%";
+        if (rname!=null&&!rname.equals(""))rname = "%"+rname+"%";
         //pageservice调用，查询数据
-        PageBean<Route> routePageBean = routeService.pageQuery(cid, currentPage, pageSize,rname);
-        JsonUtil.writeJsonToClient(routePageBean,response);
+        PageBean<Route> pb = routeService.pageQuery(cid, currentPage, pageSize,rname);
+        JsonUtil.writeJsonToClient(pb,response);
     }
     @RequestMapping("/findOne")
     public void findOne(HttpServletRequest request, HttpServletResponse response) throws IOException {
