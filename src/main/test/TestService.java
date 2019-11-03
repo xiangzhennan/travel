@@ -22,19 +22,22 @@ public class TestService {
         SqlSessionFactory factory = (SqlSessionFactory) ac.getBean("sessionFactory");
         SqlSession session = factory.openSession();
         //CategoryDao mapper = session.getMapper(CategoryDao.class);
-   //     RouteDao mapper = session.getMapper(RouteDao.class);
+//   RouteDao mapper = session.getMapper(RouteDao.class);
 //        List<Category> all = mapper.findAll();
 //        System.out.println(all);
 //        int recordsNum = mapper.findRecordsNum(5, "%三亚%");
 //        System.out.println(recordsNum);
-  //      List<Route> byPage = mapper.findByPage(5, 2, 5, "%三亚%");
         RouteDao mapper = session.getMapper(RouteDao.class);
-        Route route = mapper.findOne(1);
+        List<Route> byPage = mapper.findByPage(5, 2, 5, "%三亚%");
+        for (Route route:
+             byPage) {
+            System.out.println(route);
+            System.out.println(route.getRouteImgList());
+            System.out.println(route.getSeller());
+            System.out.println("测试");
+        }
 
-        System.out.println(route);
-        System.out.println(route.getRouteImgList());
-        System.out.println(route.getSeller());
-        System.out.println("测试");
+
 
     }
 }

@@ -28,7 +28,7 @@
             }
 
             //当页码加载完成后，调用load方法，发送ajax请求加载数据
-            load(cid,null,rname);
+            load(cid,1,rname);
         });
 
         function load(cid ,currentPage,rname){
@@ -49,7 +49,7 @@
                     beforeNum = 1;
                 }
 
-                var beforePage = '<li  onclick="javascript:load('+cid+','+beforeNum+',\''+rname+'\')" class="threeword"><a href="javascript:void(0)">上一页</a></li>';
+                var beforePage = '<li onclick="javascript:load('+cid+','+beforeNum+',\''+rname+'\')" class="threeword"><a href="javascript:void(0)">上一页</a></li>';
 
                 lis += fristPage;
                 lis += beforePage;
@@ -103,8 +103,12 @@
                     //拼接字符串
                     lis += li;
                 }
-                var lastPage = '<li class="threeword"><a href="javascript:;">末页</a></li>';
-                var nextPage = '<li class="threeword"><a href="javascript:;">下一页</a></li>';
+                var lastPage = '<li onclick="javascript:load('+cid+','+pb.totalPage+',\''+rname+'\')"><a href="javascript:void(0)">末页</a></li>';
+                var nextNum = pb.currentPage+1;
+                if(nextNum > pb.totalPage){
+                    beforeNum = pb.totalPage;
+                }
+                var nextPage = '<li onclick="javascript:load('+cid+','+nextNum+',\''+rname+'\')"><a href="javascript:void(0)">下一页</a></li>';
 
                 lis += nextPage;
                 lis += lastPage;

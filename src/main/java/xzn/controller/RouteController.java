@@ -44,7 +44,9 @@ public class RouteController {
         if (pageSizeString!=null&&pageSizeString.length()>0){
             pageSize = Integer.parseInt(pageSizeString);
         }
-        if (rname!=null&&!rname.equals(""))rname = "%"+rname+"%";
+        if (rname!=null&&!rname.equals("null"))rname = "%"+rname+"%";
+        else rname= null;
+        System.out.println("rname提取"+rname);
         //pageservice调用，查询数据
         PageBean<Route> pb = routeService.pageQuery(cid, currentPage, pageSize,rname);
         JsonUtil.writeJsonToClient(pb,response);

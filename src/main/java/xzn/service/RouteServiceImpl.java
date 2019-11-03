@@ -24,10 +24,6 @@ public class RouteServiceImpl implements RouteService{
         //封装数据集合
         int start = (currentPage-1)*pageSize;
         List<Route> list = routeDao.findByPage(cid,start,pageSize,rname);
-        for (Route route:list
-             ) {
-            System.out.println(route);
-        }
         pb.setList(list);
 
         int totalPage = (totalCount%pageSize==0?0:1)+totalCount/pageSize;
